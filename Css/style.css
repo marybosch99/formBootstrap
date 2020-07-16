@@ -1,0 +1,136 @@
+:root{
+    --color-dark: #222831;
+    --color-dark-x: #34343c;
+    --color-dark-xx: #393e46;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: #f5f6f8;
+    color: #ffffff;
+    letter-spacing: .05rem;
+}
+
+/* Cambio de color de las clases */
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.bg-dark {
+    background-color: #222831 !important;
+}
+
+/* Padding blanco para tamaños grandes */
+#section {
+    padding: 3rem;
+}
+
+
+/* Shadow del titulo */
+.h1{
+    
+    text-shadow: 0 0 0.1em #8F7;
+    
+   /* text-shadow: rgba(0,0,255,1) -1px -2px 0.5em; */
+}
+
+/* Padding del container de formulario */
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+/* botones google y facebook */
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+.btn-outline-dark{
+    border: 2px solid  #393e46;
+    /* background-color: transparent; */
+}
+
+
+/* controles de formlario */
+.form-control {
+    background-color: #393e46;
+    border: 2px solid #393e46;
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+
+/* boton registrese */
+.btn-green{
+    background-color:  #76e8ab;
+    color: #ffffff;
+}
+
+.btn-green:hover {
+    background-color: #ff7777;
+    color: #ffffff;
+}
+
+/* link volver */
+.volver{
+    color: #76e8ab;
+    text-decoration: none;
+}
+
+.volver:hover{
+    color: #ff7777;
+}
+
+/* .img-fluid{
+    width: 635px;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+} */
+
+
+/* Columna de imagen */
+.registro-bg{
+    background-image: url(/Img/verdeagua.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-bottom: 0rem;
+    filter: grayscale(40%);
+}
+
+
+@media (max-width: 576px){
+    #section{
+        padding: 0;
+    }
+    .p-6{
+        padding: 2rem;
+    }
+
+    .btn-width{
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 1200px){
+    .registro-bg{
+        min-height: 50vh;
+    }
+}
+
+
+/* input[type=checkbox]:checked + label:before{
+    background-color: #ff7777 !important;
+} */
+/* .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: #ff7777;
+} */
